@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+
+{% block title %}
+<title>Home : Task Buddyy</title>
+{% endblock title %}
+
+{% block content %}
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-lg-4">
+        <img src="{% static 'images/notebook.jpg' %}" alt="Notebook"width="360"height="250">
+      </div>
+      <div class="col-lg-4">
+        <img src="{% static 'images/sticky.jpg' %}" alt="Stickynotes"width="360"height="250">
+      </div>
+      <div class="col-lg-4">
+        <img src="{% static 'images/idea.jpg' %}" alt="Idea"width="360"height="250">
+      </div>
+    </div>
+    <br>
+    <div class = "row">
+      <div class="col-md-6 offset-md-3">
+        <center><h2 class="p-3 mb-2 bg-warning text-dark"> Easy To Use</h2></center>
+          <center><p class="h3"> Plan Your Day Better </p></center>
+            <center><p class="h4"> Taskbuddy is there for your help!</p></center>
+      </div>
+      
+    </div>
+    <br>
+    <div class="col-md-6 offset-md-5">
+    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+      <a href="{% url 'todolist' %}" <button type="button" class="btn btn-success">Get Started</button></a>
+    </div>
+  </div>
+    
+
+  </div>
+{% endblock content %}
